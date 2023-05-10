@@ -10,11 +10,9 @@ export default function Form() {
   const books = useSelector((store) => store.books);
   const handleSubmit = (e) => {
     e.preventDefault();
-    const title = e.target[0].value;
-    const author = e.target[1].value;
     const id = `item${books.length + 1}`;
     dispatch(addBook({ title, author, id }));
-    e.target.reset();
+    Form.reset();
   };
   return (
     <div className="add">

@@ -12,7 +12,7 @@ export default function Form() {
     e.preventDefault();
     const id = `item${books.length + 1}`;
     dispatch(addBook({ title, author, id }));
-    Form.reset();
+    // Form.reset();
   };
   return (
     <div className="add">

@@ -9,7 +9,7 @@ export default function BookList() {
   return (
     <div className="main">
       <div>
-        {books.map((book) => (
+        {books.books.map((book) => (
           <Book
             category={book.category}
             title={book.title}

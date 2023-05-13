@@ -25,7 +25,7 @@ export default function Form() {
 
   return (
     <div className="add">
-      <h2>ADD A NEW BOOK</h2>
+      <h2>ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -41,7 +41,7 @@ export default function Form() {
           onChange={(e) => setAuthor(e.target.value)}
           required
         />
-        <button type="submit"> Add </button>
+        <button type="submit" className="Update-progress addButton"> Add </button>
       </form>
     </div>
   );

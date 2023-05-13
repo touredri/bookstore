@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/bookSlice';
+import { getBooks, removeBook } from '../redux/books/bookSlice';
 import './book.css';
 
 export default function Book({
@@ -21,6 +21,7 @@ export default function Book({
             type="button"
             onClick={() => {
               dispatch(removeBook(id));
+              dispatch(getBooks());
             }}
           >
             Remove

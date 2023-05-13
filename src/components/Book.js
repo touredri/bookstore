@@ -23,6 +23,7 @@ export default function Book({
 
         <div className="interaction">
           <button type="button" className="Comments">Comments</button>
+          <div className="trait" />
           <button
             type="button"
             className="Comments"
@@ -33,6 +34,7 @@ export default function Book({
           >
             Remove
           </button>
+          <div className="trait" />
           <button type="button" className="Comments">Edit</button>
         </div>
       </div>
@@ -57,7 +59,7 @@ export default function Book({
         </div>
         <div>
           <p style={{
-            color: '#121212', fontSize: '16px',
+            color: '#121212', fontSize: '2rem',
           }}
           >
             {`${percentage}%`}
@@ -65,6 +67,7 @@ export default function Book({
           <p className="Completed">Complete</p>
         </div>
       </div>
+      <div className="verticalLine" />
       <div className="chapter">
         <p className="Current-Chapter">Current Chapter</p>
         <p className="Current-Lesson">Chapter 17</p>
